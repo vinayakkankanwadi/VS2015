@@ -9,6 +9,10 @@ namespace CounterActor.Interfaces
 {
     public interface ICounterActor : IActor
     {
-        Task<string> DoWorkAsync();
+        Task<int> GetAsync();
+
+        Task SetAsync(int count);
+
+        Task<int> CompareExchangeAsync(int value, int comparand);
     }
 }

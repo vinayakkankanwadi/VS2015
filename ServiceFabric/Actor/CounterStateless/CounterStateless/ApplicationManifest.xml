@@ -7,7 +7,7 @@
   <DefaultServices>
     <Service Name="CounterActorService">
       <StatelessService ServiceTypeName="CounterActorServiceType">
-        <UniformInt64Partition PartitionCount="9" LowKey="-9223372036854775808" HighKey="9223372036854775807" />
+        <UniformInt64Partition PartitionCount="1" LowKey="-9223372036854775808" HighKey="9223372036854775807" />
       </StatelessService>
     </Service>
   </DefaultServices>

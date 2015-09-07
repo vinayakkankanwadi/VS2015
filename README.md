@@ -1,2 +1,7 @@
 # VS2015
-VS
+
+-> Service Fabric 
+
+  	-> Action Stateless
+
+  	-> Action Stateful

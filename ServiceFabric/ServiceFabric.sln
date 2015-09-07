@@ -1,0 +1,86 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Actor", "Actor", "{2F64176E-157D-4E06-84FC-E343E32A14CD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Stateless", "Stateless", "{5D8E7814-4508-44DE-AA62-AF588725122B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Stateful", "Stateful", "{C770A5FF-8C61-4C50-8AFD-CED24A8464A4}"
+EndProject
+Project("{A07B5EB6-E848-4116-A8D0-A826331D98C6}") = "CounterStateless", "Actor\CounterStateless\CounterStateless\CounterStateless.sfproj", "{A63808E4-5C40-4F0E-80B1-3E253F22DAC5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CounterActor", "Actor\CounterStateless\CounterActor\CounterActor.csproj", "{C47D1837-9275-494B-B1F7-82FCCA2E9E9F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CounterActor.Interfaces", "Actor\CounterStateless\CounterActor.Interfaces\CounterActor.Interfaces.csproj", "{A5A30783-E3CE-41A7-9228-89AE07770A07}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CounterStateless.Client", "Actor\CounterStateless\CounterStateless.Client\CounterStateless.Client.csproj", "{8F84814A-3639-4708-940D-B0327A5DBF7A}"
+EndProject
+Project("{A07B5EB6-E848-4116-A8D0-A826331D98C6}") = "CounterStateful", "Actor\CounterStateful\CounterStateful\CounterStateful.sfproj", "{D9860F26-956F-436F-B0EC-C9266A2C3FE8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CounterActor", "Actor\CounterStateful\CounterActor\CounterActor.csproj", "{8CE13BC5-09B7-45F7-A3E6-F1228C8589A2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CounterActor.Interfaces", "Actor\CounterStateful\CounterActor.Interfaces\CounterActor.Interfaces.csproj", "{2ACD602C-8ACC-45DB-A7B7-75FB8944EFF5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CounterStateful.Client", "Actor\CounterStateful\CounterStateful.Client\CounterStateful.Client.csproj", "{C08B7AC6-71A0-4DFA-9AD6-CE6418C01536}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A63808E4-5C40-4F0E-80B1-3E253F22DAC5}.Debug|x64.ActiveCfg = Debug|x64
+		{A63808E4-5C40-4F0E-80B1-3E253F22DAC5}.Debug|x64.Build.0 = Debug|x64
+		{A63808E4-5C40-4F0E-80B1-3E253F22DAC5}.Debug|x64.Deploy.0 = Debug|x64
+		{A63808E4-5C40-4F0E-80B1-3E253F22DAC5}.Release|x64.ActiveCfg = Release|x64
+		{A63808E4-5C40-4F0E-80B1-3E253F22DAC5}.Release|x64.Build.0 = Release|x64
+		{A63808E4-5C40-4F0E-80B1-3E253F22DAC5}.Release|x64.Deploy.0 = Release|x64
+		{C47D1837-9275-494B-B1F7-82FCCA2E9E9F}.Debug|x64.ActiveCfg = Debug|x64
+		{C47D1837-9275-494B-B1F7-82FCCA2E9E9F}.Debug|x64.Build.0 = Debug|x64
+		{C47D1837-9275-494B-B1F7-82FCCA2E9E9F}.Release|x64.ActiveCfg = Release|x64
+		{C47D1837-9275-494B-B1F7-82FCCA2E9E9F}.Release|x64.Build.0 = Release|x64
+		{A5A30783-E3CE-41A7-9228-89AE07770A07}.Debug|x64.ActiveCfg = Debug|x64
+		{A5A30783-E3CE-41A7-9228-89AE07770A07}.Debug|x64.Build.0 = Debug|x64
+		{A5A30783-E3CE-41A7-9228-89AE07770A07}.Release|x64.ActiveCfg = Release|x64
+		{A5A30783-E3CE-41A7-9228-89AE07770A07}.Release|x64.Build.0 = Release|x64
+		{8F84814A-3639-4708-940D-B0327A5DBF7A}.Debug|x64.ActiveCfg = Debug|x64
+		{8F84814A-3639-4708-940D-B0327A5DBF7A}.Debug|x64.Build.0 = Debug|x64
+		{8F84814A-3639-4708-940D-B0327A5DBF7A}.Release|x64.ActiveCfg = Release|x64
+		{8F84814A-3639-4708-940D-B0327A5DBF7A}.Release|x64.Build.0 = Release|x64
+		{D9860F26-956F-436F-B0EC-C9266A2C3FE8}.Debug|x64.ActiveCfg = Debug|x64
+		{D9860F26-956F-436F-B0EC-C9266A2C3FE8}.Debug|x64.Build.0 = Debug|x64
+		{D9860F26-956F-436F-B0EC-C9266A2C3FE8}.Debug|x64.Deploy.0 = Debug|x64
+		{D9860F26-956F-436F-B0EC-C9266A2C3FE8}.Release|x64.ActiveCfg = Release|x64
+		{D9860F26-956F-436F-B0EC-C9266A2C3FE8}.Release|x64.Build.0 = Release|x64
+		{D9860F26-956F-436F-B0EC-C9266A2C3FE8}.Release|x64.Deploy.0 = Release|x64
+		{8CE13BC5-09B7-45F7-A3E6-F1228C8589A2}.Debug|x64.ActiveCfg = Debug|x64
+		{8CE13BC5-09B7-45F7-A3E6-F1228C8589A2}.Debug|x64.Build.0 = Debug|x64
+		{8CE13BC5-09B7-45F7-A3E6-F1228C8589A2}.Release|x64.ActiveCfg = Release|x64
+		{8CE13BC5-09B7-45F7-A3E6-F1228C8589A2}.Release|x64.Build.0 = Release|x64
+		{2ACD602C-8ACC-45DB-A7B7-75FB8944EFF5}.Debug|x64.ActiveCfg = Debug|x64
+		{2ACD602C-8ACC-45DB-A7B7-75FB8944EFF5}.Debug|x64.Build.0 = Debug|x64
+		{2ACD602C-8ACC-45DB-A7B7-75FB8944EFF5}.Release|x64.ActiveCfg = Release|x64
+		{2ACD602C-8ACC-45DB-A7B7-75FB8944EFF5}.Release|x64.Build.0 = Release|x64
+		{C08B7AC6-71A0-4DFA-9AD6-CE6418C01536}.Debug|x64.ActiveCfg = Debug|x64
+		{C08B7AC6-71A0-4DFA-9AD6-CE6418C01536}.Debug|x64.Build.0 = Debug|x64
+		{C08B7AC6-71A0-4DFA-9AD6-CE6418C01536}.Release|x64.ActiveCfg = Release|x64
+		{C08B7AC6-71A0-4DFA-9AD6-CE6418C01536}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5D8E7814-4508-44DE-AA62-AF588725122B} = {2F64176E-157D-4E06-84FC-E343E32A14CD}
+		{C770A5FF-8C61-4C50-8AFD-CED24A8464A4} = {2F64176E-157D-4E06-84FC-E343E32A14CD}
+		{A63808E4-5C40-4F0E-80B1-3E253F22DAC5} = {5D8E7814-4508-44DE-AA62-AF588725122B}
+		{C47D1837-9275-494B-B1F7-82FCCA2E9E9F} = {5D8E7814-4508-44DE-AA62-AF588725122B}
+		{A5A30783-E3CE-41A7-9228-89AE07770A07} = {5D8E7814-4508-44DE-AA62-AF588725122B}
+		{8F84814A-3639-4708-940D-B0327A5DBF7A} = {5D8E7814-4508-44DE-AA62-AF588725122B}
+		{D9860F26-956F-436F-B0EC-C9266A2C3FE8} = {C770A5FF-8C61-4C50-8AFD-CED24A8464A4}
+		{8CE13BC5-09B7-45F7-A3E6-F1228C8589A2} = {C770A5FF-8C61-4C50-8AFD-CED24A8464A4}
+		{2ACD602C-8ACC-45DB-A7B7-75FB8944EFF5} = {C770A5FF-8C61-4C50-8AFD-CED24A8464A4}
+		{C08B7AC6-71A0-4DFA-9AD6-CE6418C01536} = {C770A5FF-8C61-4C50-8AFD-CED24A8464A4}
+	EndGlobalSection
+EndGlobal

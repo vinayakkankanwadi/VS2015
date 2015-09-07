@@ -12,5 +12,7 @@ namespace CounterActor.Interfaces
         Task<int> GetCountAsync();
 
         Task SetCountAsync(int count);
+
+        Task<int> CompareExchangeAsync(int count, int comparand);
     }
 }

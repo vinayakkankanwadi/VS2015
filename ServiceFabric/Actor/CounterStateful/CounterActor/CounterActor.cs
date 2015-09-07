@@ -11,17 +11,21 @@ namespace CounterActor
 {
     public class CounterActor : Actor<CounterActorState>, ICounterActor
     {
-        public override Task OnActivateAsync()
+        public Task<int> CompareExchangeAsync(int count, int comparand)
         {
-            if (this.State == null)
+            ActorEventSource.Current.ActorMessage(this, "CompareExchange({0},{1})", count, comparand);
+            ActorEventSource.Current.ActorMessage(this, "Current counter value is {0}", this.State.Count);
+
+            var current = this.State.Count;
+            if (current == comparand)
             {
-                this.State = new CounterActorState() { Count = 0 };
+                this.State.Count = count;
+                ActorEventSource.Current.ActorMessage(this, "Current counter value is now {0}", this.State.Count);
             }
-
-            ActorEventSource.Current.ActorMessage(this, "State initialized to {0}", this.State);
-            return Task.FromResult(true);
+            return Task.FromResult(current);
         }
-
+        
+        [Readonly]
         public Task<int> GetCountAsync()
         {
             ActorEventSource.Current.ActorMessage(this, "Getting current count value as {0}", this.State.Count);

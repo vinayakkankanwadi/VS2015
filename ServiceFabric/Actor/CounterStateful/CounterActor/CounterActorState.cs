@@ -11,7 +11,7 @@ using Microsoft.ServiceFabric.Actors;
 
 namespace CounterActor
 {
-    [DataContract]
+    [Serializable]
     public class CounterActorState
     {
         [DataMember]
